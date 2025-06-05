@@ -64,21 +64,21 @@ const Navbar = () => {
           ))}
         </div>
         <div className="basis-[10%] border border-x-0 flex justify-between border-brand-gray-100">
-          <div className="w-full flex items-center justify-center">
-            <button>
+          <button className="w-full flex items-center justify-center cursor-pointer">
+            <span>
               <Image src={SearchIcon} alt="icon" className="h-6 w-6 aspect-square"/>
-            </button>
-          </div>
-          <div className="border border-y-0 border-x-brand-gray-100 w-full flex items-center justify-center">
-            <button>
+            </span>
+          </button>
+          <button className="border border-y-0 border-x-brand-gray-100 cursor-pointer w-full flex items-center justify-center">
+            <span>
               <Image src={HeartIcon} alt="icon" className="h-6 w-6 aspect-square"/>
-            </button>
-          </div>
-          <div className="w-full flex items-center justify-center">
-            <button>
+            </span>
+          </button>
+          <button className="w-full flex items-center justify-center cursor-pointer">
+            <span>
               <Image src={ShopIcon} alt="icon" className="h-6 w-6 aspect-square"/>
-            </button>
-          </div>
+            </span>
+          </button>
         </div>
       </div>
     </nav>
