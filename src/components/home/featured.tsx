@@ -10,26 +10,36 @@ const TacticSansBold = localFont({
   src: "../../app/font/TacticSans-Bld.ttf",
 });
 
+const featuredImages = [
+  FeaturedImage1,
+  FeaturedImage2,
+  FeaturedImage3,
+  FeaturedImage4,
+];
+
 const Featured = () => {
   return (
     <section className="bg-brand-purple-100 p-20 pt-10">
       <div className="flex flex-col items-center">
-        <p className={`${TacticSansBold.className} font-normal text-[56px] text-black`}>Featured</p>
-        <p className="text-[#6C6C6C] text-lg font-normal">There are newest style of the season.</p>
+        <p
+          className={`${TacticSansBold.className} font-normal text-[56px] text-black`}
+        >
+          Featured
+        </p>
+        <p className="text-[#6C6C6C] text-lg font-normal">
+          There are newest style of the season.
+        </p>
       </div>
       <div className="grid grid-cols-4 gap-x-5 mt-10">
-        <div className="rounded-lg">
-          <Image src={FeaturedImage1} alt="featured-image" className="w-full h-full"/>
-        </div>
-        <div className="rounded-lg">
-          <Image src={FeaturedImage2} alt="featured-image" className="w-full h-full"/>
-        </div>
-        <div className="rounded-lg">
-          <Image src={FeaturedImage3} alt="featured-image" className="w-full h-full"/>
-        </div>
-        <div className="rounded-lg">
-          <Image src={FeaturedImage4} alt="featured-image" className="w-full h-full"/>
-        </div>
+        {featuredImages.map((image,index) => (
+          <div className="rounded-lg" key={index}>
+            <Image
+              src={image}
+              alt="featured-image"
+              className="w-full h-full"
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
