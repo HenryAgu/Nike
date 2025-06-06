@@ -4,7 +4,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <main className="min-h-screen px-11 py-7">
+    <main className="min-h-screen">
       <HomeHero />
       <Featured/>
     </main>

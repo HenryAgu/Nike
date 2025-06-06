@@ -8,13 +8,13 @@ const TacticSansBold = localFont({
 
 const HomeHero = () => {
   return (
-    <section className="border-2 border-black pt-10 h-[884px] bg-brand-gold-100 relative">
+    <section className="border-2 border-black pt-10 h-[884px] bg-brand-gold-100 relative  mx-11 mt-7">
       <div className="flex flex-col items-center text-center gap-y-5">
         <p className="tracking-[12%] uppercase font-medium text-5xl text-brand-brown-100">
           The ALL NEW
         </p>
         <h1
-          className={`${TacticSansBold.className} text-[105px] uppercase font-black leading-32 tracking-[2%] text-brand-gold-150 text-shadow-lg text-shadow-black`}
+          className={`${TacticSansBold.className} text-[105px] uppercase font-black leading-32 tracking-[2%] text-brand-gold-150 text-shadow-lg text-stroke`}
         >
           NIKE Air Force 1 <br /> West Indies
         </h1>
