@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Logo from "../../../public/assets/Logo.svg";
+import Logo from "../../../public/assets/icons/Logo.svg";
 import SearchIcon from "../../../public/assets/icons/search.svg";
 import HeartIcon from "../../../public/assets/icons/heart.svg";
 import ShopIcon from "../../../public/assets/icons/shop.svg";

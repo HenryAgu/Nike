@@ -7,7 +7,7 @@ import React from "react";
 const Shoe = () => {
   return (
     <section>
-      <Image src={ShoeTag} alt="shoe-tag" className="absolute right-5 z-100 top-[-100px]"/>
+      <Image src={ShoeTag} alt="shoe-tag" className="absolute right-5 z-100 top-[-100px] animate-bounce"/>
       <div className="absolute bottom-[-80px] right-5">
         <Image src={ShoeImage} alt="shoe" />
       </div>

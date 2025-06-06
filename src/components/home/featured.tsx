@@ -32,11 +32,11 @@ const Featured = () => {
       </div>
       <div className="grid grid-cols-4 gap-x-5 mt-10">
         {featuredImages.map((image,index) => (
-          <div className="rounded-lg" key={index}>
+          <div className="rounded-lg overflow-hidden" key={index}>
             <Image
               src={image}
               alt="featured-image"
-              className="w-full h-full"
+              className="w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
             />
           </div>
         ))}
