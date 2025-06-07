@@ -6,6 +6,8 @@ import FeaturedImage2 from "../../../public/assets/images/featured-2.png";
 import FeaturedImage3 from "../../../public/assets/images/featured-3.png";
 import FeaturedImage4 from "../../../public/assets/images/featured-4.png";
 
+
+// Fonts
 const TacticSansBold = localFont({
   src: "../../app/font/TacticSans-Bld.ttf",
 });
