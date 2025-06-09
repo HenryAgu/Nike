@@ -53,7 +53,7 @@ const JustDoIt = () => {
           Captures messages that stands for more than just sport.
         </span>
       </div>
-      <Image src={starsIcon} alt="stars_icon" className="absolute right-80 z-50"/>
+      <Image src={starsIcon} alt="stars_icon" className="relative ml-auto mb-[-110px] mr-5 z-50"/>
       <div className="grid grid-cols-3 gap-x-0.5 mt-14">
         {shop.map((item) => (
           <div className=" relative" key={item.title}>
