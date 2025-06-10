@@ -1,5 +1,6 @@
 import Image from "next/image";
 import RaysIcon from "../../../public/assets/icons/rays.svg";
+import latestShoe from "../../../public/assets/images/latest.png";
 import localFont from "next/font/local";
 import React from "react";
 
@@ -47,16 +48,34 @@ const LatestCollection = () => {
           FROM THE latest collection of kicks
         </h3>
       </div>
-      <div className="bg-[#FF00000D] my-10 py-12 pr-20 rounded-tl-[231px] rounded-bl-[231px] rounded-tr-[98px] rounded-br-[98px] flex items-center justify-between">
-        <div className="">left</div>
-        <div className="flex flex-col items-end text-right gap-y-5">
-          <p className={`${TacticSansBold.className} font-normal text-5xl text-black leading-14`}>AIR JORDAN <br /> Retro 7</p>
+      <div className="bg-[#FF00000D] my-16 h-fit pr-20 rounded-tl-[231px] rounded-bl-[231px] rounded-tr-[98px] rounded-br-[98px] flex justify-between items-stretch">
+        <div className="relative w-[429px]">
+          <Image src={latestShoe} alt="latest-shoe" className="absolute" />
+          <div className="bg-[#FF0000] h-full w-full rounded-[231px]"></div>
+        </div>
+        <div className="flex flex-col items-end text-right gap-y-5  py-12">
+          <p
+            className={`${TacticSansBold.className} font-normal text-5xl text-black leading-14`}
+          >
+            AIR JORDAN <br /> Retro 7
+          </p>
           <div className="flex items-center gap-x-3.5">
-            <span className="bg-brand-gray-250 text-brand-gray-300 px-2 text-[22px] font-normal">Men’s Shoes</span>
+            <span className="bg-brand-gray-250 text-brand-gray-300 px-2 text-[22px] font-normal">
+              Men’s Shoes
+            </span>
             <span className="text-[22px] text-black font-normal">2 Colors</span>
           </div>
-          <p className={`${TacticSansBold.className} text-[#4B4B4B] text-[38px] font-normal`}>MRP: $229.99</p>
-          <button type="button" className="bg-[#FE0101] text-white py-2 px-3.5 text-lg font-normal cursor-pointer">Add to bag +</button>
+          <p
+            className={`${TacticSansBold.className} text-[#4B4B4B] text-[38px] font-normal`}
+          >
+            MRP: $229.99
+          </p>
+          <button
+            type="button"
+            className="bg-[#FE0101] text-white py-2 px-3.5 text-lg font-normal cursor-pointer"
+          >
+            Add to bag +
+          </button>
         </div>
       </div>
       <div className="grid grid-cols-4 gap-x-10">
