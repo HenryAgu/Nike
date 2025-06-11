@@ -77,18 +77,18 @@ const aboutNike: FooterLink[] = [
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white lg:px-20 xl:px-24 py-18 font-poppins flex items-center justify-between">
-      <div className="flex gap-x-14">
-        <div className="flex flex-col gap-y-5">
-          <p className="text-base font-semibold text-white tracking-[-2%]">
+    <footer className="bg-black text-white px-4 lg:px-20 xl:px-24 py-14 lg:py-18 font-poppins flex flex-col gap-y-14 lg:flex-row lg:items-center justify-between">
+      <div className="flex lg:flex-row flex-col gap-y-10 gap-x-14">
+        <div className="flex flex-col gap-y-3 lg:gap-y-5">
+          <p className="text-sm lg:text-base font-semibold text-white tracking-[-2%]">
             MENU
           </p>
-          <ul className="flex flex-col gap-y-3.5">
+          <ul className="flex flex-col gap-y-2 lg:gap-y-3.5">
             {menuLinks.map((item) => (
               <li key={item.title}>
                 <Link
                   href={item.path}
-                  className="uppercase text-sm font-normal text-white tracking-[-2%]"
+                  className="uppercase text-xs lg:text-sm font-normal text-white tracking-[-2%]"
                 >
                   {item.title}
                 </Link>
@@ -96,16 +96,16 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="flex flex-col gap-y-5">
-          <p className="text-base font-semibold text-white tracking-[-2%]">
+        <div className="flex flex-col gap-y-3 lg:gap-y-5">
+          <p className="text-sm lg:text-base font-semibold text-white tracking-[-2%]">
             HELPDESK
           </p>
-          <ul className="flex flex-col gap-y-3.5">
+          <ul className="flex flex-col gap-y-2 lg:gap-y-3.5">
             {helpDesk.map((item) => (
               <li key={item.title}>
                 <Link
                   href={item.path}
-                  className="uppercase text-sm font-normal text-white tracking-[-2%]"
+                  className="uppercase text-xs lg:text-sm font-normal text-white tracking-[-2%]"
                 >
                   {item.title}
                 </Link>
@@ -113,16 +113,16 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="flex flex-col gap-y-5">
-          <p className="text-base font-semibold text-white tracking-[-2%]">
+        <div className="flex flex-col gap-y-3 lg:gap-y-5">
+          <p className="text-sm lg:text-base font-semibold text-white tracking-[-2%]">
             ABOUT NIKE
           </p>
-          <ul className="flex flex-col gap-y-3.5">
+          <ul className="flex flex-col gap-y-2 lg:gap-y-3.5">
             {aboutNike.map((item) => (
               <li key={item.title}>
                 <Link
                   href={item.path}
-                  className="uppercase text-sm font-normal text-white tracking-[-2%]"
+                  className="uppercase text-xs lg:text-sm font-normal text-white tracking-[-2%]"
                 >
                   {item.title}
                 </Link>
@@ -131,14 +131,14 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col items-end gap-y-5">
+      <div className="flex flex-col items-end gap-y-3.5 lg:gap-y-5">
         <div className="text-right">
-          <p className="font-normal text-sm text-white tracking-[-2%]">
+          <p className="font-normal text-xs lg:text-sm text-white tracking-[-2%]">
             <span className="font-semibold">Primary Address</span> <br /> One
             Bowerman Drive <br /> Beaverton, OR 97005-6453 <br /> USA
           </p>
         </div>
-        <div className="flex items-center gap-x-3">
+        <div className="flex items-center gap-x-1.5 lg:gap-x-3">
           <Link href="">
             <Image
               src={TwitterIcon}
@@ -161,7 +161,7 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <p className="text-sm font-normal text-white tracking-[-2%]">
+        <p className="text-xs lg:text-sm font-normal text-white tracking-[-2%]">
           © 2022 Nike, Inc. All Rights Reserved
         </p>
       </div>
