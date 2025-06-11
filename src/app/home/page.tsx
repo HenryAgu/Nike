@@ -1,6 +1,6 @@
 "use client";
 import Slide from "@/components/Slide";
-import Star from "../../../public/assets/star.svg";
+import Star from "../../../public/assets/icons/star.svg";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import { useScroll } from "framer-motion";
