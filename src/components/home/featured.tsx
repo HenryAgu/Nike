@@ -22,13 +22,13 @@ const featuredImages = [
 const Featured = () => {
   return (
     <section className="bg-brand-purple-100 px-4 py-14 lg:p-14 xl:p-20 pt-10">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center text-center">
         <p
           className={`${TacticSansBold.className} font-normal text-[56px] text-black`}
         >
           Featured
         </p>
-        <p className="text-[#6C6C6C] text-lg font-normal">
+        <p className="text-[#6C6C6C] text-sm lg:text-lg font-normal">
           There are newest style of the season.
         </p>
       </div>

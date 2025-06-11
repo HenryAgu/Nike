@@ -43,9 +43,9 @@ const JustDoIt = () => {
       className="lg:px-14 px-4 py-14 lg:py-20 xl:p-30 h-fit bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: "url('/assets/images/background.png')" }}
     >
-      <div className="flex flex-col gap-y-2.5 lg:gap-y-0 text-center">
+      <div className="flex flex-col gap-y-0 text-center">
         <p
-          className={`${TacticSansBold.className} text-black font-normal text-3xl lg:text-[56px] tracking-[-4%]`}
+          className={`${TacticSansBold.className} text-black font-normal text-[56px] tracking-[-4%]`}
         >
           Just do it
         </p>
@@ -56,7 +56,7 @@ const JustDoIt = () => {
       <Image
         src={starsIcon}
         alt="stars_icon"
-        className="relative ml-auto mb-[-30px] lg:mb-[-100px] xl:mb-[-110px] lg:mr-2 xl:mr-5 z-50 w-14.5 h-14.5 lg:w-[157px] lg:h-[134px]"
+        className="relative ml-auto mb-[-30px] lg:mb-[-100px] xl:mb-[-110px] lg:mr-2 xl:mr-5 z-50 w-16.5 h-16.5 lg:w-[157px] lg:h-[134px]"
       />
       <div className="grid grid-cols-1 gap-y-3.5 lg:grid-cols-3 lg:gap-x-3.5 xl:gap-x-0.5 lg:mt-10 xl:mt-14">
         {shop.map((item) => (

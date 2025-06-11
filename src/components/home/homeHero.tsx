@@ -39,8 +39,8 @@ const HomeHero = () => {
           <h4 className={`${TacticSansBold.className} text-brand-gold-250 leading-10 font-normal text-3xl xl:text-[38px]`}>
             $129.99 Only
           </h4>
-          <div className="mt-4 xl:mt-8 flex items-center gap-x-3.5 xl:gap-x-5">
-            <Link href="" className="bg-brand-gold-250 p-2 lg:py-3.5 lg:px-5 text-white font-normal text-base xl:text-lg">Add to bag +</Link>
+          <div className="mt-4 xl:mt-8 flex lg:flex-row flex-col items-center gap-y-2 gap-x-3.5 xl:gap-x-5">
+            <Link href="" className="bg-brand-gold-250 py-2 px-3.5 lg:py-3.5 lg:px-5 text-white font-normal text-base xl:text-lg">Add to bag +</Link>
             <Link href="" className="text-sm font-normal text-brand-dark-100">View More</Link>
           </div>
         </div>
