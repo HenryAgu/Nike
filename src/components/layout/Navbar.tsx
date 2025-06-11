@@ -49,10 +49,10 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="flex max-h-[65px]">
-        <div className="basis-[15%] lg:basis-[10%] text-center border border-x-0  border-brand-gray-100 flex items-center justify-center">
+        <div className="basis-[10%] lg:basis-[10%] text-center border border-x-0  border-brand-gray-100 flex items-center justify-center">
           <Image src={Logo} alt="Logo" className=" mx-auto" />
         </div>
-        <div className="basis-[70%] lg:basis-[80%] text-center border  border-brand-gray-100 flex items-center py-2.5 justify-center gap-x-2.5 lg:gap-x-5">
+        <div className="basis-[65%] lg:basis-[80%] text-center border  border-brand-gray-100 flex items-center py-2.5 justify-center gap-x-2.5 lg:gap-x-5">
           {navMenu.map((item) => (
             <Link
               key={item.title}
@@ -63,7 +63,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <div className="basis-[15%] lg:basis-[10%] border border-x-0 flex justify-between border-brand-gray-100">
+        <div className="basis-[25%] lg:basis-[10%] border border-x-0 flex justify-between border-brand-gray-100">
           <button className="w-full flex items-center justify-center cursor-pointer">
             <span>
               <Image src={SearchIcon} alt="icon" className="lg:h-6 lg:w-6 h-3 w-3 aspect-square"/>
