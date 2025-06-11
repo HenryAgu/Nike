@@ -21,7 +21,7 @@ const featuredImages = [
 
 const Featured = () => {
   return (
-    <section className="bg-brand-purple-100 p-20 pt-10">
+    <section className="bg-brand-purple-100 lg:p-14 xl:p-20 pt-10">
       <div className="flex flex-col items-center">
         <p
           className={`${TacticSansBold.className} font-normal text-[56px] text-black`}

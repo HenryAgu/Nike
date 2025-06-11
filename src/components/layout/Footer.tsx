@@ -77,7 +77,7 @@ const aboutNike: FooterLink[] = [
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-24 py-18 font-poppins flex items-center justify-between">
+    <footer className="bg-black text-white lg:px-20 xl:px-24 py-18 font-poppins flex items-center justify-between">
       <div className="flex gap-x-14">
         <div className="flex flex-col gap-y-5">
           <p className="text-base font-semibold text-white tracking-[-2%]">
