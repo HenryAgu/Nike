@@ -21,7 +21,7 @@ const featuredImages = [
 
 const Featured = () => {
   return (
-    <section className="bg-brand-purple-100 lg:p-14 xl:p-20 pt-10">
+    <section className="bg-brand-purple-100 px-4 py-14 lg:p-14 xl:p-20 pt-10">
       <div className="flex flex-col items-center">
         <p
           className={`${TacticSansBold.className} font-normal text-[56px] text-black`}
@@ -32,7 +32,7 @@ const Featured = () => {
           There are newest style of the season.
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-x-5 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-10">
         {featuredImages.map((image,index) => (
           <div className="rounded-lg overflow-hidden" key={index}>
             <Image
