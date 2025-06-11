@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import Lenis from "lenis";
 import { useScroll } from "framer-motion";
 
-export default function Home() {
+const Carousel = () => {
   const container = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -23,9 +23,8 @@ export default function Home() {
     requestAnimationFrame(raf);
   }, []);
   return (
-    <main className="overflow-x-hidden">
-      <div className="h-[80vh]"/>
-      <div className="rotate-6 bg-white border border-x-0 overflow-hidden">
+    <main className="overflow-x-hidden py-20 relative z-50 mt-[-50px] mb-[-200px]">
+      <div className="rotate-6 bg-white overflow-hidden">
         <Slide
           src={Star}
           direction={"left"}
@@ -34,7 +33,7 @@ export default function Home() {
           speedFactor={5}
         />
       </div>
-      <div className="-rotate-3 relative top-[-60px] bg-white border border-x-0 overflow-hidden">
+      <div className="-rotate-6 relative top-[-70px] bg-white overflow-hidden">
         <Slide
           src={Star}
           direction={"right"}
@@ -43,7 +42,8 @@ export default function Home() {
           speedFactor={5}
         />
       </div>
-      <div className="h-[80vh]"/>
     </main>
   );
-}
+};
+
+export default Carousel;

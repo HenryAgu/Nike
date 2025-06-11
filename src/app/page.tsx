@@ -1,3 +1,4 @@
+import Carousel from "@/components/home/carousel";
 import Featured from "@/components/home/featured";
 import HomeHero from "@/components/home/homeHero";
 import JustDoIt from "@/components/home/justDoIt";
@@ -8,6 +9,7 @@ const HomePage = () => {
   return (
     <main className="min-h-screen">
       <HomeHero />
+      <Carousel/>
       <JustDoIt/>
       <Featured/>
       <LatestCollection/>

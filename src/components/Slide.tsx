@@ -1,5 +1,6 @@
 import { MotionValue, useTransform, motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
+import localFont from "next/font/local";
 
 interface slideProps {
   src: string | StaticImageData;
@@ -31,15 +32,32 @@ const Slide = ({
       <Phrase src={src} />
       <Phrase src={src} />
       <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
     </motion.div>
   );
 };
 
+// Fonts
+const TacticSansBlack = localFont({
+  src: "../app/font/TacticSans-Blk.ttf",
+});
+
 const Phrase = ({ src }: { src: string | StaticImageData }) => {
   return (
-    <div className="px-15 flex gap-x-25 items-center">
-      <p className="text-[7.5vw] uppercase font-black">Just do it</p>
-      <Image src={src} alt="" width={40} height={40} className="h-10 w-10" />
+    <div className="px-4 py-2.5 flex gap-x-8 items-center bg-[#E5F33C]">
+      <p
+        className={`${TacticSansBlack.className} text-[40px] uppercase font-normal`}
+      >
+        Just do it
+      </p>
+      <Image src={src} alt="" width={40} height={40} className="h-10 w-10 object-contain flex shrink-0" />
     </div>
   );
 };
