@@ -69,7 +69,7 @@ const JustDoIt = () => {
                 <span className="absolute top-0 right-0 mt-1 mr-1 h-full w-full  bg-white border-2 border-black transition-all duration-200 group-hover:mr-0 group-hover:mt-0"></span>
                 <span
                 style={{backgroundColor: item.color}}
-                  className={`fold-bold uppercase relative inline-block h-full w-full border-2 border-black px-5 py-2.5 text-lg ${TacticSansBold.className} font-normal text-white transition duration-100`}
+                  className={`fold-bold uppercase relative inline-block h-full w-full border-2 border-black px-5 py-2.5 xl:text-base 2xl:text-lg ${TacticSansBold.className} font-normal text-white transition duration-100`}
                 >
                   {`Shop ${item.title}`}
                 </span>

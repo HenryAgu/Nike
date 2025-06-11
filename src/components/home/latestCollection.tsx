@@ -39,7 +39,7 @@ const latestKicks: LatestKicks[] = [
 
 const LatestCollection = () => {
   return (
-    <section className="py-20 px-40">
+    <section className="py-26 px-40">
       <div className="flex items-start justify-center">
         <Image src={RaysIcon} alt="rays" className="relative bottom-3" />
         <h3
@@ -50,7 +50,11 @@ const LatestCollection = () => {
       </div>
       <div className="bg-[#FF00000D] my-16 h-fit pr-20 rounded-tl-[231px] rounded-bl-[231px] rounded-tr-[98px] rounded-br-[98px] flex justify-between items-stretch">
         <div className="relative w-[429px]">
-          <Image src={latestShoe} alt="latest-shoe" className="absolute" />
+          <Image
+            src={latestShoe}
+            alt="latest-shoe"
+            className="absolute h-auto right-10"
+          />
           <div className="bg-[#FF0000] h-full w-full rounded-[231px]"></div>
         </div>
         <div className="flex flex-col items-end text-right gap-y-5  py-12">
@@ -72,7 +76,7 @@ const LatestCollection = () => {
           </p>
           <button
             type="button"
-            className="bg-[#FE0101] text-white py-2 px-3.5 text-lg font-normal cursor-pointer"
+            className="bg-[#FE0101] text-white py-2 px-3.5 text-lg font-normal cursor-pointer transition-all duration-200 ease-in-out hover:opacity-65"
           >
             Add to bag +
           </button>
