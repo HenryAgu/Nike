@@ -40,12 +40,12 @@ const TacticSansBold = localFont({
 const JustDoIt = () => {
   return (
     <div
-      className="lg:px-14 px-4 py-14 lg:py-20 xl:p-30 h-fit bg-no-repeat bg-cover bg-center"
+      className="lg:px-14 px-4 py-14 pt-24 lg:py-20 xl:p-30 h-fit bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: "url('/assets/images/background.png')" }}
     >
       <div className="flex flex-col gap-y-0 text-center">
         <p
-          className={`${TacticSansBold.className} text-black font-normal text-[56px] tracking-[-4%]`}
+          className={`${TacticSansBold.className} text-black font-normal text-4xl lg:text-[56px] tracking-[-4%]`}
         >
           Just do it
         </p>

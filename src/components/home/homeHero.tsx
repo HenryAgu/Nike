@@ -29,7 +29,7 @@ const HomeHero = () => {
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
         <Shoe />
       </div>
-      <div className="flex flex-col lg:flex-row items-center w-fit lg:absolute my-10 lg:my-0 mx-auto lg:top-90 xl:top-120 lg:left-18 xl:left-30 lg:gap-x-5 xl:gap-x-15">
+      <div className="flex flex-col lg:flex-row items-center w-fit lg:absolute my-10 lg:my-0 mx-auto lg:top-80 xl:top-120 lg:left-18 xl:left-30 lg:gap-x-5 xl:gap-x-15">
         <div className="flex flex-col items-center lg:items-start lg:gap-y-1 xl:gap-y-2.5 max-w-full">
           <p
             className={`${TacticSansMed.className} text-xl xl:text-2xl xl:leading-10 font-normal text-brand-gray-200 line-through`}

@@ -24,7 +24,7 @@ const Carousel = () => {
   }, []);
   return (
     <main className="overflow-x-hidden py-20 relative z-50 mt-[-50px] mb-[-200px]">
-      <div className="rotate-6 bg-white overflow-hidden">
+      <div className="rotate-6 bg-white overflow-hidden relative bottom-[35px]">
         <Slide
           src={Star}
           direction={"left"}
@@ -37,7 +37,7 @@ const Carousel = () => {
         <Slide
           src={Star}
           direction={"right"}
-          left={"-100%"}
+          left={"-200%"}
           progress={scrollYProgress}
           speedFactor={5}
         />

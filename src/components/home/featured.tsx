@@ -24,7 +24,7 @@ const Featured = () => {
     <section className="bg-brand-purple-100 px-4 py-14 lg:p-14 xl:p-20 pt-10">
       <div className="flex flex-col items-center text-center">
         <p
-          className={`${TacticSansBold.className} font-normal text-[56px] text-black`}
+          className={`${TacticSansBold.className} font-normal text-4xl lg:text-[56px] text-black`}
         >
           Featured
         </p>

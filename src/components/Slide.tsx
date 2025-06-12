@@ -40,6 +40,26 @@ const Slide = ({
       <Phrase src={src} />
       <Phrase src={src} />
       <Phrase src={src} />
+            <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+            <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+            <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
+      <Phrase src={src} />
     </motion.div>
   );
 };
@@ -51,13 +71,13 @@ const TacticSansBlack = localFont({
 
 const Phrase = ({ src }: { src: string | StaticImageData }) => {
   return (
-    <div className="px-4 py-2.5 flex gap-x-8 items-center bg-[#E5F33C]">
+    <div className="px-2 lg:px-4 py-1 lg:py-2.5 flex gap-x-4 lg:gap-x-8 items-center bg-[#E5F33C]">
       <p
-        className={`${TacticSansBlack.className} text-[40px] uppercase font-normal`}
+        className={`${TacticSansBlack.className} lg:text-[40px] text-xl uppercase font-normal`}
       >
         Just do it
       </p>
-      <Image src={src} alt="" width={40} height={40} className="h-10 w-10 object-contain flex shrink-0" />
+      <Image src={src} alt="" width={40} height={40} className="lg:h-10 lg:w-10 w-3 h-3 object-contain flex shrink-0" />
     </div>
   );
 };

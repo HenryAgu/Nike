@@ -14,10 +14,10 @@ const Shoe = () => {
         <Image
           src={ShoeTag}
           alt="shoe-tag"
-          className="absolute right-[25px] lg:right-5 z-100 top-[-20px] lg:top-[-100px] lg:w-[116px] lg:h-[116px] h-6.5 w-6.5"
+          className="absolute right-[25px] lg:right-3 z-100 top-[-20px] lg:top-[-40px] xl:top-[-50px] lg:w-[100px] lg:h-[100px] h-6.5 w-6.5"
         />
-        <div className="absolute bottom-[-20px] lg:bottom-[-80px] right-5">
-          <Image src={ShoeImage} alt="shoe" className="lg:h-[671px] lg:w-[711px] h-[150px] w-[450px]"/>
+        <div className="absolute bottom-[-20px] lg:bottom-[-50px] right-5">
+          <Image src={ShoeImage} alt="shoe" className="lg:h-[400px] lg:w-[711px] xl:h-[500px] h-[150px] w-[450px]"/>
         </div>
         <Image src={SemiCircleIcon} alt="semi_circle" />
       </div>
