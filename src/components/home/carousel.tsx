@@ -23,8 +23,8 @@ const Carousel = () => {
     requestAnimationFrame(raf);
   }, []);
   return (
-    <main className="overflow-x-hidden py-20 relative z-50 mt-[-50px] mb-[-200px]">
-      <div className="rotate-6 bg-white overflow-hidden relative bottom-[35px]">
+    <main className="overflow-x-hidden py-20 relative z-50 mt-[-30px] lg:mt-[-50px] mb-[-200px]">
+      <div className="rotate-6 bg-white overflow-hidden relative bottom-[35px] lg:bottom-0">
         <Slide
           src={Star}
           direction={"left"}

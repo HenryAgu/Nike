@@ -66,6 +66,7 @@ const JustDoIt = () => {
               alt={`${item.title} image`}
               width={407.9}
               height={407}
+              className=""
             />
             <div className="flex flex-wrap justify-center gap-6 absolute bottom-13 lg:bottom-10 xl:bottom-15 left-1/2 transform -translate-x-1/2">
               <Link className="relative group" href={item.path}>
